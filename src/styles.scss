@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~normalize.css/normalize.css";
+
+.container {
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 1, 1);
+  &:focus {
+    outline: none;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+}

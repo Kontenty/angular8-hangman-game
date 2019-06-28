@@ -1,0 +1,54 @@
+@import "../../variables";
+
+@media (max-width: 481px) {
+  .section-letters {
+    h4 {
+      text-align: center;
+    }
+    .letters {
+      justify-content: center;
+    }
+  }
+}
+
+.letters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 41px);
+  grid-gap: 5px;
+}
+
+.btn {
+  border: none;
+  font-size: 20px;
+  height: 41px;
+  min-width: 41px;
+  width: 41px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  // line-height: 41px;
+  color: #fff;
+  border-radius: 50%;
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &.btn-primary {
+    background-color: $main-color;
+    border-color: $main-color;
+    box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14),
+      0 3px 1px -2px rgba(156, 39, 176, 0.2),
+      0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  }
+  &.btn-danger {
+    background-color: $danger-color;
+    border-color: $danger-color;
+    box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14),
+      0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
+  }
+  &.btn-success {
+    background-color: $success-color;
+    border-color: $success-color;
+    box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14),
+      0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12);
+  }
+}

@@ -1,0 +1,9 @@
+.img-fluid {
+  max-width: 70%;
+  @media (min-width: 481px) {
+    max-width: 100%;
+  }
+}
+.section-image {
+  text-align: center;
+}

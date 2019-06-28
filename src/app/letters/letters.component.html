@@ -1,0 +1,18 @@
+<section class="section-letters">
+  <h4>Choose the letter</h4>
+  <div class="letters">
+    <button
+      class="btn"
+      *ngFor="let letter of letters"
+      (click)="onSelect(letter)"
+      [disabled]="letter.selected || blockLetters"
+      [ngClass]="{
+        'btn-primary': letter.status === null,
+        'btn-success': letter.status === 'ok',
+        'btn-danger': letter.status === 'wrong'
+      }"
+    >
+      {{ letter.name }}
+    </button>
+  </div>
+</section>
